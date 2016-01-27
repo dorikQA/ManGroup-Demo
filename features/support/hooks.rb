@@ -25,4 +25,5 @@ After do |scenario|
     $driver.save_screenshot(screenshot_file)
     embed("#{screenshot_file}", 'image/png')
   end
+
 end

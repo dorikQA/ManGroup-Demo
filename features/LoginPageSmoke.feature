@@ -28,7 +28,7 @@ Feature: Login Page
     Then  Clear Pin field
 #5 MG00001- Landing Page - Login Page - Login - Verify that user  is successfully login
   Scenario: Login page - the correct pin and click login
-    Then Input the correct pin
+    Then Enter incorrect pin
     Then Click "Login" button
     Then Verify that user  is successfully login
 
