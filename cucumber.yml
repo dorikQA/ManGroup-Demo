@@ -1,0 +1,2 @@
+login: --tags @login --format html --out report.html --format pretty
+test: --tags @test --format html --out report.html --format pretty
