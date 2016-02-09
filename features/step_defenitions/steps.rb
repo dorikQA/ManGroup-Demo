@@ -386,17 +386,16 @@ end
    puts submodules
            #element1 = $driver.find_element(:xpath, "//div[@class = 'newSpaceStepTwo']//h5[contains(.,'#{modules}')]")
            for row in submodules.hashes()
-            element2 = $driver.find_elements(:xpath,"//div[@class = 'newSpaceStepTwo']//a[text() = '#{row['submodule']}']")
-            if element2.count == 0
-             raise  "Couldn't find module #{row}"
-            else
-               for i in element2
-
-               i.click
-               sleep 2
-               end
-            end
-            end
+                     element2 = $driver.find_elements(:xpath,"//div[@class = 'newSpaceStepTwo']//a[text() = '#{row['submodule']}']")
+                     if element2.count == 0
+                       raise  "Couldn't find module #{row}"
+                     else
+                       for i in element2
+                         i.click
+                         sleep 2
+                       end
+                     end
+   end
  end
 
 Then /^Click "([^"]*)"$/ do |modules|
